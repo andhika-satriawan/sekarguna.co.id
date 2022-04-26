@@ -1,0 +1,147 @@
+<?php /* Template Name: Contact */ ?>
+
+<?php get_header(); ?>
+
+<body>
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="<?= get_stylesheet_directory_uri().'/assets/images/loading.gif'; ?>" alt="loading"></div>
+  <div class="m-application theme--light transition-page" id="app">
+    <div class="loading"></div>
+    <div class="m-content fresh money-var" id="main-wrap">
+      <div>
+        <div id="home"></div>
+        <div class="main-wrap">
+          <!-- ##### PARALLAX DOTS #####-->
+          <div class="parallax-dot-home">
+            <div class="parallax-wrap dots-wrap">
+              <div class="inner-parallax">
+                <div class="figure">
+                  <div>
+                    <div data-enllax-ratio="0.2" data-enllax-type="foreground">
+                      <img src="<?= get_stylesheet_directory_uri().'/assets/images/decoration/dot-deco.svg'; ?>" alt="dot deco" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- ##### END PARALLAX DOTS #####-->
+          <!-- ##### HEADER #####-->
+          <!-- #### HEADER ####-->
+          <div class="sidenav mobile-nav" id="slide-menu">
+            <ul class="collection">
+              <li class="collection-item" style="animation-duration: 0.25s"><a class="waves-effect menu-list" href="<?= get_home_url(); ?>">home</a></li>
+              <li class="collection-item" style="animation-duration: 0.5s"><a class="waves-effect menu-list" href="<?= get_home_url(); ?>/contact">contact</a></li>
+              <!-- <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="#about">about</a></li>
+              <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="#facility">products</a></li>
+              <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#ask-doctors">ask doctors</a></li>
+              <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#clinics">outlets</a></li>
+              <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="contact.html">contact</a></li> -->
+            </ul>
+          </div><!-- #### END HEADER ####-->
+          <header class="app-bar header" id="header">
+            <div class="container">
+              <div class="header-content">
+                <nav class="nav-logo">
+                  <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-sm-down" id="mobile_menu" type="button">
+                    <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
+                  </button>
+                  <div class="logo scrollnav">
+                    <a href="<?= get_home_url(); ?>"><img src="<?= get_stylesheet_directory_uri().'/assets/images/logo-sekarguna.png'; ?>" alt="logo" />Sekarguna Medika</a>
+                  </div>
+                </nav>
+                <nav class="nav-menu">
+                  <div class="scrollactive-nav show-md-up scrollnav">
+                    <ul>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="<?= get_home_url(); ?>">home</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="contact.html">contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-setting">
+                    <div class="setting">
+                      <button class="btn btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" type="button" data-align="left">
+                        <i class="icon material-icons" id="setting_icon">settings</i>
+                      </button>
+                      <div class="dropdown-content" id="dropdown_config">
+                        <ul class="collection with-header">
+                          <li class="collection-header">theme mode</li>
+                          <li class="collection-item no-hover pl-4">
+                            <div class="flex-menu">
+                              <div class="switch">
+                                <label>light<input id="theme_switcher" type="checkbox"><span class="lever"></span>dark</label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <!-- <ul class="collection with-header lang-menu" id="lang_menu">
+                          <li class="collection-header">language</li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="ar" href="/multilang/ar">
+                              <div class="flag circle"><i class="ar"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="de" href="/multilang/de">
+                              <div class="flag circle"><i class="de"></i></div>
+                              <span class="content lang-opt text-truncate">Deutsch</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="en" href="/multilang/en">
+                              <div class="flag circle"><i class="en"></i></div>
+                              <span class="content lang-opt text-truncate">English</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="id" href="/multilang/id">
+                              <div class="flag circle"><i class="id"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa Indonesia</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="pt" href="/multilang/pt">
+                              <div class="flag circle"><i class="pt"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="zh" href="/multilang/zh">
+                              <div class="flag circle"><i class="zh"></i></div>
+                              <span class="content lang-opt text-truncate">简体中文</span>
+                            </a>
+                          </li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+          <!-- ##### END HEADER #####-->
+          <main class="container-wrap">
+            <!-- ##### PARALLAX OVAL #####-->
+            <div class="parallax-wrap">
+              <div>
+                <div class="inner-parallax about">
+                  <div class="figure">
+                    <div>
+                      <div data-enllax-ratio="-0.15" data-enllax-type="foreground">
+                        <div class="parallax-oval parallax-primary"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- ##### END PARALLAX OVAL #####-->
+
+            <div class="container">
+              <div class="contact-us-sekarguna">
+                <?= do_shortcode('[contact-form-7 id="123" title="Contact form 1"]'); ?>
+              </div>
+            </div>
+
+          </main>
+        </div>
+
+<?php get_footer(); ?>

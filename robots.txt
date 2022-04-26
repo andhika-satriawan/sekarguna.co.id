@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /wp-admin/ 
+Disallow: /wp-login.php
+Disallow: /content/
+Disallow: /*.htm$
+
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-news
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Mediapartners-Google
+Allow: /
+User-agent: Adsbot-Google
+Allow: /
+
+Sitemap: http://www.sekarguna.co.id/sitemap.xml
+

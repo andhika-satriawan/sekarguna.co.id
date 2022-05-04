@@ -12,6 +12,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /sekarguna/index.php [L]
 </IfModule>
 
-Redirect /webmail https://svr.sekarguna.co.id:2096
-Redirect /webmailnew https://svr.sekarguna.co.id:2096
 # END WordPress
+
+# BEGIN Hotlinking
+# The directives (lines) between "BEGIN Hotlinking" and "END Hotlinking" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+# END Hotlinking

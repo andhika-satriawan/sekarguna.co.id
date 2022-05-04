@@ -1,4 +1,6 @@
-$(document).ready(function () {
+
+
+jQuery(function( $ ) {
     $(window).scroll(function() {
         if ($(window).scrollTop() > 532) {
           $("#principle-menu-fixed").css({
@@ -18,7 +20,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+jQuery(function( $ ) {
     $(".tab_content").hide(); //hide All content
     var defaultActive = $("#case_categories li.active a").attr("href"); //store active href default value
     $(defaultActive).show();
@@ -39,7 +41,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
+jQuery(function( $ ) {
     $("#slideshow > div:gt(0)").hide();
     setInterval(function() { 
         $('#slideshow > div:first')
@@ -52,7 +54,7 @@ $(document).ready(function () {
 });
 
 // Page Clients
-$(document).ready(function() {
+jQuery(function( $ ) {
   $('.figure-clients').each(function() {
       let altName = this.children[0].alt;
       $(this).parent().append(`<h5>${altName}</h5>`);

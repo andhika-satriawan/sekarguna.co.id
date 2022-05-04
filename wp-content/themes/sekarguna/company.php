@@ -1,6 +1,6 @@
 <?php /* Template Name: Company */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 
 <div id="banner-video" class="show-sm-up">
     <h1>COMPANY PROFILE</h1>

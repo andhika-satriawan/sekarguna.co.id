@@ -1,6 +1,6 @@
 <?php /* Template Name: Surabaya */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 <!-- ##### CLINICS #####-->
 <section class="space-top-short">
   <div class="root">
@@ -24,22 +24,22 @@
         <div class="col-lg-1 pa-6 show-lg-up"></div>
         <div class="col-lg-5 col-md-6 pa-6">
           <h4 class="title-primary title-branch-office">Branch Office Surabaya</h4>
-            <div class="block">
-                <div>
-                  <img class="branch-office" src="<?= get_stylesheet_directory_uri().'/assets/images/branch office surabaya.png' ?>" alt="">
-                    <div class="wow fadeInLeftShort" data-wow-offset="-50" data-wow-delay="0.6000000000000001s" data-duration="0.3s">
-                        <div class="address-card">
-                            <div class="paper">
-                                <div class="row">
-                                <div class="col-md-6 pa-0"><i class="material-icons icon">phone</i><a href="tel:+62 31 5032 411">+62 31 5032 411</a></div>
-                                <div class="col-md-6 pa-0"><i class="material-icons icon">email</i>mail@sekarguna.co.id</div>
-                                <div class="col-sm-12 pa-0"><i class="material-icons icon">location_on</i>Jl. Prof. Dr. Mustopo No.19</div>
-                                </div>
-                            </div>
-                        </div>
+          <div class="block">
+            <div>
+              <img class="branch-office" src="<?= get_stylesheet_directory_uri() . '/assets/images/branch office surabaya.png' ?>" alt="">
+              <div class="wow fadeInLeftShort" data-wow-offset="-50" data-wow-delay="0.6000000000000001s" data-duration="0.3s">
+                <div class="address-card">
+                  <div class="paper">
+                    <div class="row">
+                      <div class="col-md-6 pa-0"><i class="material-icons icon">phone</i><a href="tel:+62 31 5032 411">+62 31 5032 411</a></div>
+                      <div class="col-md-6 pa-0"><i class="material-icons icon">email</i>mail@sekarguna.co.id</div>
+                      <div class="col-sm-12 pa-0"><i class="material-icons icon">location_on</i>Jl. Prof. Dr. Mustopo No.19</div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
 
         <div class="col-md-6 pa-6">

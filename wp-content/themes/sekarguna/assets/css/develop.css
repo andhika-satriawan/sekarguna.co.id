@@ -9,7 +9,23 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 main.container-wrap {
-  margin-top: 0;
+  padding-top: 2em;
+}
+
+body .header-content .logo img {
+  max-width: none;
+  width: auto;
+  height: 60px;
+}
+
+body .header.fixed .logo img {
+  width: auto;
+  height: 60px;
+}
+
+body .header-content .logo a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
 }
 
 .header-content nav .menu-setting {
@@ -1049,50 +1065,43 @@ ul.box-content-search li p {
 
 
 /* JOBS */
-.box-jobs {
-  background-color: #FFF;
-  padding: 36px 40px;
-  border: 1px solid #ddd;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
-  -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+body.archive.post-type-archive.post-type-archive-jobpost span.job-title,
+body.archive.post-type-archive.post-type-archive-jobpost .job-location,
+body.archive.post-type-archive.post-type-archive-jobpost .job-date,
+body.archive.post-type-archive.post-type-archive-jobpost .job-type, 
+body.single-jobpost span.job-title,
+body.single-jobpost .sjb-page .list-data .v2 .job-type,
+body.single-jobpost .sjb-page .list-data .v2 .job-location,
+body.single-jobpost .sjb-page .list-data .v2 .job-date,
+body.single-jobpost .sjb-page .sjb-detail .list-data .v2 ul li::before,
+body.single-jobpost .sjb-page .sjb-detail .list-data .v2 h3,
+body.single-jobpost .sjb-page .sjb-detail .list-data .v2 .job-features .sjb-title-value h4 i {
+  color: #009543;
 }
 
-.box-jobs h2 {
-  font-size: 30px;
-  font-weight: 900;
+body.archive.post-type-archive.post-type-archive-jobpost input.btn-search.btn.btn-primary,
+body.archive.post-type-archive.post-type-archive-jobpost .sjb-page .btn-primary,
+body.single-jobpost .sjb-page .sjb-detail .list-data .v2 .jobpost-form .file div,
+body.single-jobpost .sjb-page .sjb-detail .list-data .v2 .jobpost-form .app-submit {
+  background-color: #009543 !important;
 }
 
-.box-jobs a {
-  background: #009543;
-  color: #FFF;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 5px;
+body.post-type-archive-jobpost input#keywords {
+  background: white;
+  padding-left: 12px;
 }
 
-.box-jobs h4 {
-  font-size: 26px;
-  padding: 0.5em 0;
+.header-margin-top.sjb-job-info {
+  width: 100%;
 }
 
-.box-jobs h5 {
-  font-size: 18px;
-  font-weight: 900;
+body.single-jobpost form > h3,
+body.single-jobpost form.jobpost-form .row label {
+  padding-left: 15px !important;
 }
 
-.box-jobs ul li {
-  list-style: disc;
-}
-
-.box-jobs ul {
-  padding-left: 14px;
-}
-
-.page-archive-jobs {
-  padding-top: 130px;
+body.single-jobpost form.jobpost-form button {
+  margin-left: 15px !important;
 }
 /* END JOBS */
 

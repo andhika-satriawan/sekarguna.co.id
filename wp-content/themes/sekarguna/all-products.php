@@ -1,6 +1,6 @@
 <?php /* Template Name: All Products */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 
 <div id="banner-video" class="show-sm-up">
   <div class="bg-banner"></div>

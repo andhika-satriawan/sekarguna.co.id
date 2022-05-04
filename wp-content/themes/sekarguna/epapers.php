@@ -1,6 +1,6 @@
 <?php /* Template Name:Epapers */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 
 <div class="container">
     <h1>ePapers</h1>

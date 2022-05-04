@@ -2,6 +2,49 @@
 add_theme_support('title-tag');
 add_theme_support('post-thumbnails');
 
+add_action('wp_enqueue_scripts', function () {
+    wp_add_inline_script('jquery', 'var $ = jQuery.noConflict();');
+});
+
+function add_theme_scripts()
+{
+    wp_enqueue_style('style', get_stylesheet_uri());
+
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/vendors/normalize.css', array(), '1.1', 'all');
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/vendors/bootstrap.css', array(), '1.1', 'all');
+    wp_enqueue_style('youtubebackground', get_template_directory_uri() . '/assets/css/vendors/jquery.youtubebackground.css', array(), '1.1', 'all');
+    wp_enqueue_style('materialize', get_template_directory_uri() . '/assets/css/vendors/materialize.css', array(), '1.1', 'all');
+    wp_enqueue_style('hamburger-menu', get_template_directory_uri() . '/assets/css/vendors/hamburger-menu.css', array(), '1.1', 'all');
+    wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/vendors/animate.css', array(), '1.1', 'all');
+    wp_enqueue_style('animate-extends', get_template_directory_uri() . '/assets/css/vendors/animate-extends.css', array(), '1.1', 'all');
+    wp_enqueue_style('slick', get_template_directory_uri() . '/assets/css/vendors/slick-carousel/slick.css', array(), '1.1', 'all');
+    wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/css/vendors/slick-carousel/slick-theme.css', array(), '1.1', 'all');
+    wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.1', 'all');
+    wp_enqueue_style('develop', get_template_directory_uri() . '/assets/css/develop.css?ver=', array(), rand(1, 999999999), 'all');
+
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/vendors/jquery.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendors/bootstrap.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('enquire', get_template_directory_uri() . '/assets/js/vendors/enquire.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('enllax', get_template_directory_uri() . '/assets/js/vendors/jquery.enllax.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('form-validator', get_template_directory_uri() . '/assets/js/vendors/jquery.form-validator.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('touchSwipe', get_template_directory_uri() . '/assets/js/vendors/jquery.touchSwipe.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('youtubebackground', get_template_directory_uri() . '/assets/js/vendors/jquery.youtubebackground.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('pace', get_template_directory_uri() . '/assets/js/vendors/pace.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('slick', get_template_directory_uri() . '/assets/js/vendors/slick.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/vendors/wow.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('parallax', get_template_directory_uri() . '/assets/js/vendors/parallax.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('modernizr', get_template_directory_uri() . '/assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('materialize', get_template_directory_uri() . '/assets/js/vendors/materialize.js', array('jquery'), 1.1, true);
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js?ver=', array('jquery'), rand(1, 999999999), true);
+    wp_enqueue_script('develop', get_template_directory_uri() . '/assets/js/develop.js?ver=', array('jquery'), rand(1, 999999999), true);
+
+    if (is_singular() && comments_open() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+    }
+}
+add_action('wp_enqueue_scripts', 'add_theme_scripts', 1);
+
+
 function my_login_logo()
 { ?>
     <style type="text/css">
@@ -92,147 +135,3 @@ function wpdocs_after_setup_theme()
 }
 add_action('after_setup_theme', 'wpdocs_after_setup_theme');
 // End Searching Form
-
-
-
-
-// Custom Post Type HRD
-add_action('init', function () {
-
-    // define an array of labels
-    $post_type_labels = array(
-        'name'                  => __('Jobs'),
-        'singular_name'         => __('Job'),
-        'add_new_item'          => __('Add New Job'),
-        'edit_item'             => __('Edit Job'),
-        'new_item'              => __('New Job'),
-        'view_item'             => __('View Job'),
-        'view_items'             => __('View Jobs'),
-        'not_found'             => __('No Jobs Found'),
-        'not_found_in_trash'    => __('No Jobs Found in Trash'),
-        'all_items'             => __('All Jobs'),
-        'archives'              => __('Jobs Archives'),
-        'insert_into_item'      => __('Insert into Job'),
-        'uploaded_to_this_item' => __('Uploaded to this Job')
-    );
-
-    $post_type_labels2 = array(
-        'name'                  => __('Applicants'),
-        'singular_name'         => __('Applicant'),
-        'add_new_item'          => __('Add New Applicant'),
-        'edit_item'             => __('Edit Applicant'),
-        'new_item'              => __('New Applicant'),
-        'view_item'             => __('View Applicant'),
-        'view_items'             => __('View Applicants'),
-        'not_found'             => __('No Applicants Found'),
-        'not_found_in_trash'    => __('No Applicants Found in Trash'),
-        'all_items'             => __('All Applicants'),
-        'archives'              => __('Applicants Archives'),
-        'insert_into_item'      => __('Insert into Applicant'),
-        'uploaded_to_this_item' => __('Uploaded to this Applicant')
-    );
-
-    // define an array of arguments
-    $post_type_args = array(
-        'labels'                => $post_type_labels,
-        'public'                => true,
-        'menu_position'         => 2,
-        'menu_icon'             => 'dashicons-dashboard',
-        'show_in_menu'          => 'jobs-menu',
-        'hierarchical'          => 'true',
-        'supports'              => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'trackbacks'),
-        'capability_type'       => 'job',
-        'has_archive'           => true,
-        'capabilities' => array(
-            'edit_post'             => 'edit_job',
-            'edit_posts'            => 'edit_jobs',
-            'edit_others_posts'     => 'edit_other_jobs',
-            'publish_posts'         => 'publish_jobs',
-            'edit_published_posts'  => 'edit_published_jobs',
-            'read_post'             => 'read_job',
-            'read_private_posts'    => 'read_private_jobs',
-            'delete_post'           => 'delete_job',
-            'create_posts'          => 'create_jobs'
-        ),
-        'map_meta_cap' => true
-    );
-
-    $post_type_args2 = array(
-        'labels'                => $post_type_labels2,
-        'public'                => true,
-        'menu_position'         => 2,
-        'menu_icon'             => 'dashicons-dashboard',
-        'show_in_menu'          => 'jobs-menu',
-        'hierarchical'          => 'true',
-        'supports'              => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'trackbacks'),
-        'capability_type'       => 'job',
-        'has_archive'           => true,
-        'capabilities' => array(
-            'edit_post'             => 'edit_job',
-            'edit_posts'            => 'edit_jobs',
-            'edit_others_posts'     => 'edit_other_jobs',
-            'publish_posts'         => 'publish_jobs',
-            'edit_published_posts'  => 'edit_published_jobs',
-            'read_post'             => 'read_job',
-            'read_private_posts'    => 'read_private_jobs',
-            'delete_post'           => 'delete_job',
-            'create_posts'          => 'create_jobs'
-        ),
-        'map_meta_cap' => true
-    );
-
-    register_post_type('job', $post_type_args);
-    register_post_type('applicants', $post_type_args2);
-});
-
-add_action('init', function () {
-    add_role('hrd', 'HRD');
-
-    $hrd = get_role('hrd');
-    $hrd->add_cap('read');
-    $hrd->add_cap('edit_job');
-    $hrd->add_cap('edit_jobs');
-    $hrd->add_cap('edit_others_job');
-    $hrd->add_cap('edit_others_jobs');
-    $hrd->add_cap('publish_jobs');
-    $hrd->add_cap('edit_published_jobs');
-    $hrd->add_cap('delete_job');
-    $hrd->add_cap('create_jobs');
-});
-
-
-
-function wpse_226690_admin_menu()
-{
-    add_menu_page(
-        'Applicants',
-        'Jobs',
-        'read',
-        'jobs-menu',
-        '',
-        'dashicons-clipboard',
-        2
-    );
-}
-
-add_action('admin_menu', 'wpse_226690_admin_menu');
-
-
-
-
-
-// Apply Jobs
-if (isset($_POST['title'])) {
-    $wp_filetype = wp_check_filetype(basename($filename), null);
-    $my_post = array(
-        'post_mime_type' => $wp_filetype['type'],
-        'post_type'     => 'applicants',
-        'post_title'    => $_POST['title'],
-        'post_content'  => $_POST['description'],
-        'post_status'   => 'publish'
-    );
-
-    wp_insert_post($my_post);
-
-    die;
-}

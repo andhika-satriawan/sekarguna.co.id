@@ -1,6 +1,6 @@
 <?php /* Template Name: Our Clients */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 
 <section class="our-clients" id="facility">
 

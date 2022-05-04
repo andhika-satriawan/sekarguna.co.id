@@ -1,6 +1,6 @@
 <?php /* Template Name: Career */ ?>
 
-<?php get_header('page'); ?>
+<?php get_header(); ?>
 
 <div class="banner-career">
     <h1>Career Sekarguna Medika</h1>

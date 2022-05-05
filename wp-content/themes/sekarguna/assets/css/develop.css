@@ -70,6 +70,7 @@ h6.title-branch-office-home {
   padding: 20px 0;
   font-weight: bold;
 }
+
 /* END */
 
 
@@ -101,6 +102,7 @@ body.page-template-all-products .card.profile .person .avatar {
   z-index: 99;
   background: #FFF;
 }
+
 /* END ALL PRODUCTS */
 
 section#facility .default-card figure img {
@@ -190,8 +192,8 @@ body.page-template-outlets footer.container.footer {
   height: 300px;
 }
 
-body.page-template-outlets #slideshow > div { 
-  position: absolute; 
+body.page-template-outlets #slideshow>div {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -219,6 +221,7 @@ h1.bg-slider-trans {
 #ask-doctors.body-content-outlets .name {
   padding: 20px;
 }
+
 /* END OUTLETS */
 
 ul#case_categories li a {
@@ -260,7 +263,6 @@ div#box-menu-category {
   display: table;
   margin: 0 auto;
   border: 1px solid #ddd;
-  border-radius: 50%;
 }
 
 .card.profile small {
@@ -273,6 +275,7 @@ div#box-menu-category {
 .tab_content {
   display: none;
 }
+
 /* END TAB */
 
 /* CONTACT */
@@ -295,6 +298,7 @@ div#box-menu-category {
   border: none;
   border-radius: 5px;
 }
+
 /* END CONTACT */
 
 
@@ -303,68 +307,71 @@ button.btn-whatsapp-pulse.btn-whatsapp-pulse-border {
   border: 0;
   z-index: 99;
   background: #25d366;
-	color: white;
+  color: white;
 }
 
 .btn-whatsapp-pulse {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	font-size: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 0;
-	height: 0;
-	padding: 35px;
-	text-decoration: none;
-	border-radius: 50%;
-	animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 35px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-	}
-	80% {
-		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-	}
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
 }
 
 .btn-whatsapp-pulse-border {
-	/* bottom: 120px; */
-	right: 20px;
-	animation-play-state: paused;
+  /* bottom: 120px; */
+  right: 20px;
+  animation-play-state: paused;
 }
 
 .btn-whatsapp-pulse-border::before {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid #25d366;
-	opacity: 0.75;
-	animation-name: pulse-border;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #25d366;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse-border {
-	0% {
-		padding: 25px;
-		opacity: 0.75;
-	}
-	75% {
-		padding: 50px;
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .chat-popup {
@@ -377,9 +384,9 @@ button.btn-whatsapp-pulse.btn-whatsapp-pulse-border {
   border-radius: 10px;
   overflow: hidden;
 
-  box-shadow: 0px 0px 5px 3px rgba(156,151,151,0.75);
-  -webkit-box-shadow: 0px 0px 5px 3px rgba(156,151,151,0.75);
-  -moz-box-shadow: 0px 0px 5px 3px rgba(156,151,151,0.75);
+  box-shadow: 0px 0px 5px 3px rgba(156, 151, 151, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(156, 151, 151, 0.75);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(156, 151, 151, 0.75);
 }
 
 /* Add styles to the form container */
@@ -407,6 +414,7 @@ button.btn-whatsapp-pulse.btn-whatsapp-pulse-border {
 .header-whatsapp {
   background: #25d366;
 }
+
 .header-whatsapp p {
   padding: 30px 20px;
   font-size: 18px;
@@ -458,6 +466,7 @@ button.btn-whatsapp-pulse.btn-whatsapp-pulse-border {
   width: 80%;
   float: left;
 }
+
 /* ENDD WHATSAPP */
 
 /* SINGLE POST */
@@ -471,6 +480,7 @@ body.single-post h1.text-helper.use-text-title {
   margin-bottom: 2em;
   border: 1px solid #ddd;
 }
+
 /* END SINGLE POST */
 
 /* REGISTER */
@@ -489,6 +499,7 @@ body.single-post h1.text-helper.use-text-title {
   padding: 0.6em 1.5em;
   border-radius: 5px;
 }
+
 /* END REGISTER */
 
 
@@ -498,24 +509,29 @@ li.menu-dropdown:hover .dropdown-content {
   opacity: 1;
   min-width: 160px;
 }
+
 li.menu-dropdown .dropdown-content {
   top: 3em;
 }
+
 nav ul li.menu-dropdown a {
   color: #000;
   line-height: normal;
   padding: 15px;
 }
+
 nav ul li.menu-dropdown .dropdown-content a:hover {
   background: green;
   color: #FFF !important;
 }
+
 /* END */
 
 /* VIDEOS */
 .body-videos {
   padding-top: 3em;
 }
+
 .body-videos h1 {
   text-align: center;
   padding: 0.5em 0;
@@ -535,7 +551,7 @@ nav ul li.menu-dropdown .dropdown-content a:hover {
 
   box-shadow: 10px 10px 5px -4px rgb(0 0 0 / 32%);
   -webkit-box-shadow: 10px 10px 5px -4px rgb(0 0 0 / 32%);
-  -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.32);
 }
 
 .box-video-y strong:hover {
@@ -583,6 +599,7 @@ nav ul li.menu-dropdown .dropdown-content a:hover {
   font-size: 14px;
   text-shadow: 2px 2px 2px #2e7d32;
 }
+
 /*END*/
 
 /* MAGAZINE */
@@ -590,6 +607,7 @@ body.page-template-magazine article img {
   width: auto;
   height: 250px;
 }
+
 .box-magazine article p {
   min-height: 130px;
 }
@@ -627,19 +645,19 @@ body.page-template-magazine h2 {
 }
 
 .bg-hover-mag {
-  transition: transform .2s; 
+  transition: transform .2s;
 }
 
 .box-magazine article:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .box-magazine article:hover .bg-hover-mag {
   width: 100%;
   height: 100%;
-  background: rgb(255, 255 , 255, 0.6);
+  background: rgb(255, 255, 255, 0.6);
   position: absolute;
 }
 
@@ -662,6 +680,7 @@ body.page-template-magazine h2 {
 .box-magazine article:hover a {
   opacity: 1;
 }
+
 /* END */
 
 /* COMPANY */
@@ -719,19 +738,23 @@ body.page-template-company .parallax-dot-home {
 .quality-safety.our-mision p strong {
   font-weight: 900;
 }
+
 /* END */
 
 #banner-video iframe {
   top: 0 !important;
   height: 580px !important;
 }
+
 body.page-template-company header#header {
   background: #FFF;
 }
+
 #banner-video {
   height: 532px;
   position: relative;
 }
+
 #banner-video h1,
 #banner-video p,
 #banner-video a {
@@ -743,16 +766,19 @@ body.page-template-company header#header {
   color: #FFF;
   width: 85%;
 }
+
 #banner-video h1 {
   top: 25%;
   font-size: 3.4em;
   font-weight: 900;
 }
+
 #banner-video p {
   top: 48%;
   letter-spacing: 2px;
   word-spacing: 2px;
 }
+
 #banner-video a {
   background: #2e7d32;
   top: 64%;
@@ -762,6 +788,7 @@ body.page-template-company header#header {
   letter-spacing: 1px;
   border-radius: 5px;
 }
+
 .content-profile img {
   width: 100%;
   padding: 20px;
@@ -771,6 +798,7 @@ body.page-template-company header#header {
 #company-history {
   padding: 3em 0;
 }
+
 #company-history img {
   border: 1px solid;
 }
@@ -804,6 +832,7 @@ body.page-template-company header#header {
   font-size: 28px;
   left: 12%;
 }
+
 .box-certificate a {
   background: #2e7d32;
   padding: 10px;
@@ -812,9 +841,11 @@ body.page-template-company header#header {
   top: 50%;
   left: 34%;
 }
+
 #quality-safety {
   padding-top: 30px;
 }
+
 #quality-safety h4 {
   text-align: center;
   padding-bottom: 20px;
@@ -841,48 +872,63 @@ body.page-template-epapers h1 {
 body.page-template-epapers .box-certificate.no-1 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/bg-catalog-sekarguna.png');
 }
+
 body.page-template-epapers .box-certificate.no-2 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/bg-catalog-microlife.png');
 }
+
 body.page-template-epapers .box-certificate.no-3 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/bg-catalog-rehabmedic.png');
 }
+
 body.page-template-epapers .box-certificate.no-4 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-corpuls.png');
 }
+
 body.page-template-epapers .box-certificate.no-5 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-novos.png');
 }
+
 body.page-template-epapers .box-certificate.no-6 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-siemnova.png');
 }
+
 body.page-template-epapers .box-certificate.no-7 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-smt.png');
 }
+
 body.page-template-epapers .box-certificate.no-8 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-stihler-electronic.png');
 }
+
 body.page-template-epapers .box-certificate.no-9 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-lmt.png');
 }
+
 body.page-template-epapers .box-certificate.no-10 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-sentec.png');
 }
+
 body.page-template-epapers .box-certificate.no-11 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-owgels.png');
 }
+
 body.page-template-epapers .box-certificate.no-12 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-gehealthcare.png');
 }
+
 body.page-template-epapers .box-certificate.no-13 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-ardo.png');
 }
+
 body.page-template-epapers .box-certificate.no-14 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-kenz.png');
 }
+
 body.page-template-epapers .box-certificate.no-15 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-wellion.png');
 }
+
 body.page-template-epapers .box-certificate.no-16 {
   background-image: url('https://sekarguna.co.id/wp-content/themes/sekarguna/file/cover-catalog-alcare.png');
 }
@@ -907,20 +953,24 @@ a.button-catalog.button-download {
   margin-top: 5px;
   background: #ffa000;
 }
+
 /* END */
 
 
 /* Button Whatsapp */
-body .Window__WindowComponent-sc-1wwhwms-1.gSvsj > a {
+body .Window__WindowComponent-sc-1wwhwms-1.gSvsj>a {
   z-index: 0 !important;
   text-decoration: none;
 }
+
 body .Window__WindowComponent-sc-1wwhwms-1.gSvsj div:nth-child(6) {
   display: none !important;
 }
+
 .WhatsappChat__Component-sc-1nhdht4-0.kbtpkx {
   height: 300px;
 }
+
 .Header__Component-sc-5nh99s-0.ggUXYA {
   z-index: 9;
 }
@@ -929,6 +979,7 @@ body .Window__WindowComponent-sc-1wwhwms-1.gSvsj div:nth-child(6) {
 header#header {
   background: white;
 }
+
 /* END BUTTON WHATSAPP */
 
 
@@ -980,6 +1031,7 @@ header#header {
 .box-career p {
   font-weight: 900;
 }
+
 /* END CAREER */
 
 /* OUR CLIENTS */
@@ -1009,6 +1061,7 @@ body.page-template-clients section#facility .default-card figure img {
   text-align: center;
   font-size: 20px;
 }
+
 /* END OUR CLIENTS */
 
 /* HRD */
@@ -1018,10 +1071,11 @@ body.page-template-clients section#facility .default-card figure img {
   display: table;
   margin: 4em auto 1em auto;
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 /* END HRD */
 
 /* SEARCH */
@@ -1045,6 +1099,7 @@ ul.box-content-search li {
 ul.box-content-search li p {
   line-height: 2em;
 }
+
 /* END SEARCH */
 
 
@@ -1061,6 +1116,7 @@ ul.box-content-search li p {
   text-shadow: 2px 2px 2px #2e7d32;
   font-weight: 900;
 }
+
 /* END PRIVACY POLICY */
 
 
@@ -1068,7 +1124,7 @@ ul.box-content-search li p {
 body.archive.post-type-archive.post-type-archive-jobpost span.job-title,
 body.archive.post-type-archive.post-type-archive-jobpost .job-location,
 body.archive.post-type-archive.post-type-archive-jobpost .job-date,
-body.archive.post-type-archive.post-type-archive-jobpost .job-type, 
+body.archive.post-type-archive.post-type-archive-jobpost .job-type,
 body.single-jobpost span.job-title,
 body.single-jobpost .sjb-page .list-data .v2 .job-type,
 body.single-jobpost .sjb-page .list-data .v2 .job-location,
@@ -1095,7 +1151,7 @@ body.post-type-archive-jobpost input#keywords {
   width: 100%;
 }
 
-body.single-jobpost form > h3,
+body.single-jobpost form>h3,
 body.single-jobpost form.jobpost-form .row label {
   padding-left: 15px !important;
 }
@@ -1103,6 +1159,7 @@ body.single-jobpost form.jobpost-form .row label {
 body.single-jobpost form.jobpost-form button {
   margin-left: 15px !important;
 }
+
 /* END JOBS */
 
 
@@ -1116,6 +1173,7 @@ form#form-apply {
 input#formFile {
   line-height: normal;
 }
+
 /* End Form Apply */
 
 
@@ -1184,7 +1242,7 @@ input#formFile {
   }
 
   body.page-template-all-products section#facility .root {
-   padding: 20px 0;
+    padding: 20px 0;
   }
 
   body.page-template-all-products section#facility .massonry.tab_content {
@@ -1202,7 +1260,7 @@ input#formFile {
   }
 
   .mobile-menu .bar,
-  .mobile-menu .bar:after, 
+  .mobile-menu .bar:after,
   .mobile-menu .bar:before {
     background-color: #000;
   }
@@ -1211,7 +1269,7 @@ input#formFile {
   .logo.scrollnav {
     width: 100%;
   }
-  
+
   nav.nav-logo a {
     float: right;
   }
@@ -1235,7 +1293,7 @@ input#formFile {
   #our-office h6 {
     width: 100%;
   }
-  
+
   img.head-office-img {
     width: 100%;
     max-height: none;
@@ -1257,13 +1315,16 @@ input#formFile {
     display: block !important;
   }
 }
-@media (max-width: 991.98px) {  
+
+@media (max-width: 991.98px) {
   #banner-video h1 {
     top: 32%;
   }
+
   #banner-video p {
     top: 65%;
   }
+
   #banner-video a {
     top: 92%;
   }
